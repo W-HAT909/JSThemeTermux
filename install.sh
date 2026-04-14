@@ -15,18 +15,17 @@ if [[ "$theme" == "1" ]]; then
    mv ~/../usr/etc/motd ~/../usr/etc/motd.bp
    echo -e 'alias ls="lsd"\npython ~/../usr/etc/JSTheme/JST-ThemeGaruda.py' > ~/.bashrc
    cd $HOME
-   exit
+   echo "Ok, Done, keluar dari termos."
 elif [[ "$theme" == "2" ]]; then
    mv ~/../usr/etc/motd ~/../usr/etc/motd.bp
    echo -e 'alias ls="lsd"\npython ~/../usr/etc/JSTheme/JST-ThemeRed.py' > ~/.bashrc
    cd $HOME
-   exit
+   echo "gak kejadian apa² yak, mending keluar termux"
 elif [[ "$theme" == "3" ]]; then
    rm -rf ~/../usr/etc/JSTheme
    rm ~/.bashrc
    mv ~/../usr/etc/motd.bp ~/../usr/etc/motd
    echo "Done!"
-   exit
 else
    echo "Extied."
 fi
