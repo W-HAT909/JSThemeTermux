@@ -15,17 +15,18 @@ if [[ "$theme" == "1" ]]; then
    mv ~/../usr/etc/motd ~/../usr/etc/motd.bp
    echo -e 'alias ls="lsd"\npython ~/../usr/etc/JSTheme/JST-ThemeGaruda.py' > ~/.bashrc
    cd $HOME
-   source ~/.bashrc
+   exit
 elif [[ "$theme" == "2" ]]; then
    mv ~/../usr/etc/motd ~/../usr/etc/motd.bp
    echo -e 'alias ls="lsd"\npython ~/../usr/etc/JSTheme/JST-ThemeRed.py' > ~/.bashrc
    cd $HOME
-   source ~/.bashrc
+   exit
 elif [[ "$theme" == "3" ]]; then
    rm -rf ~/../usr/etc/JSTheme
    rm ~/.bashrc
    mv ~/../usr/etc/motd.bp ~/../usr/etc/motd
    echo "Done!"
+   exit
 else
    echo "Extied."
 fi
