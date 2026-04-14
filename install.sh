@@ -2,7 +2,7 @@
 pkg update && pkg upgrade -y
 pkg install catimg lsd python python3 -y
 pip install rich pyfiglet
-mv ikan/ ~/../usr/etc/
+mv ~/JSThemeTermux/JSTheme ~/../usr/etc
 clear
 echo "Welcome To Termux!"
 echo "[1] JakartaSecTeam Garuda Theme"
